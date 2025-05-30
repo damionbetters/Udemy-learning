@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <script>
+      function hello() {
+        alert("Hello, world!");
+      }
+      function message1() {
+        alert("You are so dope bro!");
+      }
+
+      function changeHello() {
+        let heading = document.querySelector("h1");
+
+        if (heading.innerHTML === "Hello!") {
+          heading.innerHTML = "GoodBye!";
+        } else {
+          heading.innerHTML = "Hello!";
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").onsubmit = function () {
+          const name = document.querySelector("#name").value;
+          alert(`Hello ${name}, How are you doing today?`);
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <button onclick="hello()">Click to run</button>
+    <br />
+    <hr />
+    <button onclick="message1()">OR, click here instead</button>
+    <br />
+    <hr />
+    <button onclick="changeHello()">Change</button>
+    <br />
+    <hr />
+    <form>
+      <input autofocus id="name" placeholder="Your Name" type="text" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
