@@ -51,4 +51,4 @@ const renderError = function (msg) {
   countriesContainer.insertAdjacentHTML("beforeend", msg);
   countriesContainer.style.opacity = 1;
 };
-whereAmI("Tanzania");
+whereAmI("China");

@@ -1,0 +1,9 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #e5e4e2;
+}
