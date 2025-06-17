@@ -1,6 +1,8 @@
 "use strict";
-import { createServer } from "node:http";
+import { express } from "express";
 
-http.createServer((req, res) => {
-  res.end("Hello from the server!");
+const app = express;
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
