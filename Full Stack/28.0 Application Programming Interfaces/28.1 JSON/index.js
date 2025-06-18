@@ -32,6 +32,7 @@ app.post("/recipe", (req, res) => {
       break;
   }
   //Step 4: Add code to views/index.ejs to use the recieved recipe object.
+  res.redirect("/");
 });
 
 app.listen(port, () => {
