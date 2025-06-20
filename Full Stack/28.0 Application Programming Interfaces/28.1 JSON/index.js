@@ -24,10 +24,11 @@ app.post("/recipe", (req, res) => {
       data = JSON.parse(recipeJSON)[0];
       break;
     case "beef":
+      data = JSON.parse(recipeJSON)[1];
       break;
     case "fish":
+      data = JSON.parse(recipeJSON)[2];
       break;
-
     default:
       break;
   }
